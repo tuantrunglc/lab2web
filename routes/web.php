@@ -11,16 +11,25 @@
 |
 */
 
+use App\Models\Post;
+use App\Models\User;
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Route::get('users', function () {
+    $users = factory(User::class, 10)->make()->toArray();
+    return view('starter', [
+        'users' => $users
+    ]);
+});
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('posts', function () {
+    $posts = factory(Post::class, 10)->make();
 
-Auth::routes();
-
-Route::get('/home', function() {
-    return view('home');
-})->name('home')->middleware('auth');
+    return view('posts', [
+        'posts' => $posts
+    ]);
+});

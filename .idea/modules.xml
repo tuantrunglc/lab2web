@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/lab.iml" filepath="$PROJECT_DIR$/.idea/lab.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/AdminLTE-2.4.18/.idea/AdminLTE-2.4.18.iml" filepath="$USER_HOME$/Downloads/AdminLTE-2.4.18/.idea/AdminLTE-2.4.18.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/lessons.iml" filepath="$PROJECT_DIR$/.idea/lessons.iml" />
     </modules>
   </component>
 </project>
