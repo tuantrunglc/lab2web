@@ -14,7 +14,7 @@ class UpdatePostsTable extends Migration
     public function up()
     {
         Schema::table('posts', function (Blueprint $table) {
-            $table->integer('like');
+            $table->timestamps();
         });
     }
 

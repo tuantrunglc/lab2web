@@ -26,10 +26,11 @@ Route::get('users', function () {
     ]);
 });
 
-Route::get('posts', function () {
-    $posts = factory(Post::class, 10)->make();
-
-    return view('posts', [
-        'posts' => $posts
-    ]);
-});
+//Route::get('posts', function () {
+//    $posts = factory(Post::class, 10)->make();
+//
+//    return view('posts', [
+//        'posts' => $posts
+//    ]);
+//});
+Route::resource('posts','PostController');
