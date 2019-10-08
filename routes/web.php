@@ -19,12 +19,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('users', function () {
-    $users = factory(User::class, 10)->make()->toArray();
-    return view('starter', [
-        'users' => $users
-    ]);
-});
+//Route::get('users', function () {
+//    $users = factory(User::class, 10)->make()->toArray();
+//    return view('starter', [
+//        'users' => $users
+//    ]);
+//});
 
 //Route::get('posts', function () {
 //    $posts = factory(Post::class, 10)->make();
@@ -34,3 +34,4 @@ Route::get('users', function () {
 //    ]);
 //});
 Route::resource('posts','PostController');
+Route::resource('users','UserController');
